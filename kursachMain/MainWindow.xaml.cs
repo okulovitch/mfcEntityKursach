@@ -50,5 +50,11 @@ namespace kursachMain
             Windows.Enterprises enterprice = new Windows.Enterprises();
             enterprice.Show();
         }
+
+        private void btn_StudentsMain_Click(object sender, RoutedEventArgs e)
+        {
+            Windows.Students stud = new Windows.Students();
+            stud.Show();
+        }
     }
 }

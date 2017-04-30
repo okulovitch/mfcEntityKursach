@@ -35,7 +35,8 @@ namespace kursachMain.Windows
         {
             InitializeComponent();
         }
-
+        kursachDb db = new kursachDb();
+        Предприятия enterpr = new Предприятия();
 
         private void Window_Loaded_1(object sender, RoutedEventArgs e)
         {
@@ -55,22 +56,7 @@ namespace kursachMain.Windows
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            SqlConnection con = new SqlConnection();
-            con.ConnectionString = ConfigurationManager.ConnectionStrings["kursachMain.Properties.Settings.kursachConnectionString"].ConnectionString;
-
-
-            con.Open();
-            SqlCommand cmd = new SqlCommand();
-
-            //cmd.CommandText = "insert into Предприятия(ID предприятия,Название,УНП,Адрес,Телефон,Эл_почта,Контактное лицо,IDЗаключенныхДоговоров,IDНабораНаГод) Values("
-            //    + this.ID_Enterprise.Text + ",'" + this.Name.Text + ",'" + this.YNP.Text + "','"
-            //    + this.Addres.Text + "'," + this.Phone.Text + ",'" + this.Email.Text +
-            //  ",'" + this.ID_Year_Recrutment.Text + ",'" + this.ID_Pacts.Text + "','" + this.ContactFace.Text + "','" + this.ID_Year_Recrutment.Text + ",'" + this.ID_Year_Recrutment.Text + "' )";
-
-            cmd.Connection = con;
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
+             
 
         }
 
@@ -145,26 +131,24 @@ namespace kursachMain.Windows
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            try
-            {
-                SqlConnection con = new SqlConnection();
-                con.ConnectionString = ConfigurationManager.ConnectionStrings["kursachMain.Properties.Settings.kursachConnectionString"].ConnectionString;
-                con.Open();
-                SqlCommand cmd = new SqlCommand();
-               // cmd.CommandText = "Select * from Предприятия where Название like"(this.serchByName.Text)" ";
-                cmd.Connection = con;
-                SqlDataAdapter da = new SqlDataAdapter(cmd);
-                DataTable dt = new DataTable();
-                da.Fill(dt);
-                EnterprisesDataGrid.ItemsSource = dt.DefaultView;
+            //try
+            //{
+            //    enterpr.Название = NameBox.Text;
+            //    enterpr.УНП = YNPBox.Text;
+            //    enterpr.Адрес = Addres.Text;
+            //    enterpr.Телефон = Phone.Text;
+            //    enterpr.Эл__почта = Email.Text;
+            //    enterpr.Контактное_лицо = ContactFaceBox.Text;
+            //    db.Enterprices.Add(enterpr);
+            //    db.SaveChanges();
+                    
 
-                if (con != null)
-                    con.Close();
-            }
-            catch (Exception ex)
-            {
-                ex.GetBaseException();
-            }
+
+            //}
+            //catch (Exception ex)
+            //{
+            //    ex.GetBaseException();
+            //}
         }
     }
 }

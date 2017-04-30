@@ -91,6 +91,9 @@
     <Compile Include="Windows\Practice.xaml.cs">
       <DependentUpon>Practice.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\Students.xaml.cs">
+      <DependentUpon>Students.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Виды_практики.cs">
       <DependentUpon>DbModel.tt</DependentUpon>
     </Compile>
@@ -142,6 +145,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Windows\Practice.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Students.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

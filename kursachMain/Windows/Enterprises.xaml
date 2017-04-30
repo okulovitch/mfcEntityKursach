@@ -40,9 +40,9 @@
                     <GroupBox  HorizontalAlignment="Left" Margin="5,5,0,0" VerticalAlignment="Top" Width="700" Height="200" Grid.ColumnSpan="2">
                         <Grid>
                             <Label Content="Название"  HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top"/>
-                            <TextBox x:Name="Name"  HorizontalAlignment="Right" Height="20" Margin="0,16,398,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" TextChanged="Addres_TextChanged"/>
+                            <TextBox x:Name="NameBox"  HorizontalAlignment="Right" Height="20" Margin="0,16,398,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" TextChanged="Addres_TextChanged"/>
                             <Label Content="УНП"  HorizontalAlignment="Left" Margin="0,35,0,0" VerticalAlignment="Top"/>
-                            <TextBox x:Name="YNP"  HorizontalAlignment="Right" Height="20" Margin="0,41,398,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" TextChanged="Addres_TextChanged"/>
+                            <TextBox x:Name="YNPBox"  HorizontalAlignment="Right" Height="20" Margin="0,41,398,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" TextChanged="Addres_TextChanged"/>
                             <Label Content="Адрес"  HorizontalAlignment="Left" Margin="0,60,0,0" VerticalAlignment="Top"/>
                             <TextBox x:Name="Addres"  HorizontalAlignment="Right" Height="20" Margin="0,66,398,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" TextChanged="Addres_TextChanged"/>
                             <Label Content="Телефон"  HorizontalAlignment="Left" Margin="0,88,0,0" VerticalAlignment="Top"/>
@@ -50,7 +50,7 @@
                             <Label Content=" почта"  HorizontalAlignment="Left" Margin="0,115,0,0" VerticalAlignment="Top"/>
                             <TextBox x:Name="Email"  HorizontalAlignment="Right" Height="20" Margin="0,121,398,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" TextChanged="Email_TextChanged"/>
                             <Label Content="Контактное лицо"  HorizontalAlignment="Left" Margin="-6,139,0,0" VerticalAlignment="Top" Width="107"/>
-                            <TextBox x:Name="ContactFace"  HorizontalAlignment="Right" Height="20" Margin="0,148,398,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" TextChanged="ContactFace_TextChanged"/>
+                            <TextBox x:Name="ContactFaceBox"  HorizontalAlignment="Right" Height="20" Margin="0,148,398,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" TextChanged="ContactFace_TextChanged"/>
                             <Label Content="Поиск по имени"  HorizontalAlignment="Left" Margin="309,18,0,0" VerticalAlignment="Top"/>
                             <TextBox x:Name="serchByName"  HorizontalAlignment="Right" Height="20" Margin="0,23,48,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" TextChanged="Addres_TextChanged"/>
                             <Label Content="Поиск по Контактному лицу"  HorizontalAlignment="Left" Margin="308,48,0,0" VerticalAlignment="Top"/>
@@ -71,7 +71,7 @@
 
                     </GroupBox>
 
-                    <DataGrid x:Name="EnterprisesDataGrid" HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="259" Width="1050" HeadersVisibility="Column" MinColumnWidth="110.0" MaxColumnWidth="141.0" Margin="5,0,0,79" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Visible" Grid.ColumnSpan="2"/>
+                    <DataGrid x:Name="EnterprisesDataGrid" HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="259" Width="1050" HeadersVisibility="Column" MinColumnWidth="110.0" MaxColumnWidth="141.0" Margin="0,0,0,86" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Visible"/>
                     <Button x:Name="Save" Content="Сохранить" HorizontalAlignment="Left" Margin="8,222,0,0" VerticalAlignment="Top" Width="93" Click="Button_Click" AutomationProperties.Name="Save" Grid.ColumnSpan="2"/>
                     <Button x:Name="Update" Content="Обновить" HorizontalAlignment="Left" Margin="106,222,0,0" VerticalAlignment="Top" Width="93" Click="Button_Click_1" AutomationProperties.Name="Update"/>
 
@@ -105,10 +105,10 @@
             </TabItem>
 
 
-            <TabItem Header="Составить договор" />
+            <TabItem Header="Группы" >
 
 
-
+            </TabItem>
 
 
         </TabControl>
